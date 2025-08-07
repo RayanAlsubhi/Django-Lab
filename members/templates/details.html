@@ -8,7 +8,9 @@
 <p>Phone: {{ mymember.phone }}</p>
 <p>Member since: {{ mymember.joined_date }}</p>
 
-<p>Back to <a href="/members">Members</a></p>
+<p>Back to <a href="{% url 'members' %}">Members</a>
+</p>
+<p>Back to <a href="{% url 'main' %}">Home</a></p>
 
 </body>
 </html>

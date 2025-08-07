@@ -27,3 +27,20 @@ def details(request,id):
     }
     return HttpResponse(template.render(context,request))
 
+
+def main(request):
+    template = loader.get_template('main.html')
+    return HttpResponse(template.render(request=request))
+
+
+
+
+
+def testing(request):
+    template = loader.get_template('template.html')
+
+    context = {
+        'firstname':'Rayan'
+    }
+
+    return HttpResponse(template.render(context,request))
